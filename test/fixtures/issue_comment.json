@@ -1,0 +1,16 @@
+{
+  "action": "created",
+  "issue": {
+    "number": 747,
+    "title": "[BOUNTY] Verification Bot"
+  },
+  "comment": {
+    "body": "/claim #747\n\nArticle: https://tracepatch-lab.github.io/elyan-labs-field-notes/bottube-api-integration-guide/\nWallet: RTCa14a8b8553834f4593db826222424420bf6f8417\nGitHub: tracepatch-lab",
+    "user": {
+      "login": "tracepatch-lab"
+    }
+  },
+  "sender": {
+    "login": "tracepatch-lab"
+  }
+}
