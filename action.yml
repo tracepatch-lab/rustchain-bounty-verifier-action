@@ -1,0 +1,28 @@
+name: RustChain Bounty Claim Verifier
+description: Verify RustChain bounty claim comments and post a structured evidence table.
+author: tracepatch-lab
+
+inputs:
+  github-token:
+    description: GitHub token used to read API data and optionally post comments.
+    required: true
+  rustchain-node-url:
+    description: RustChain node URL used for wallet checks.
+    required: false
+    default: https://rustchain.org
+  target-owner:
+    description: GitHub account that star/follow checks are measured against.
+    required: false
+    default: Scottcjn
+  dry-run:
+    description: If true, print the verification report without posting it.
+    required: false
+    default: "true"
+  max-star-pages:
+    description: Maximum pages of user stars to scan, 100 repos per page.
+    required: false
+    default: "10"
+
+runs:
+  using: node20
+  main: src/index.js
